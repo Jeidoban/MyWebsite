@@ -29,4 +29,9 @@ router.post('/sendEmail', function (req, res) {
     });
 });
 
+router.post('/cool', (req, res) => {
+    console.log("working");
+    console.log(req.get('name'));
+});
+
 module.exports = router;
