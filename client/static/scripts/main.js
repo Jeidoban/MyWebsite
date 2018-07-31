@@ -28,14 +28,11 @@ $(document).ready(() => {
     }
 });
 
-let animElemsTop = [
-    $("#cb2Anim"),
-    $("#cb3Anim"),
-    $("#cb4AnimTitle"),
-    $("#cb4AnimResume")
-];
-
 let animElemsBottom = [
+    [$("#cb2Anim")],
+    [$("#cb3Anim")],
+    [$("#cb4AnimTitle")],
+    [$("#cb4AnimResume")],
     [
         $("#cb4Anim1Position"),
         $("#cb4Anim1List")
@@ -68,20 +65,23 @@ function isScrolledIntoView(elem, win) {
     let elemTop = elem.offset().top;
     let elemBottom = elemTop + elem.height();
 
-    return ((elemBottom <= docViewBottom)) //&& (elemTop >= docViewTop));
+    return elemBottom <= docViewBottom;
 }
 
-$(document).on("scroll", () => {
-    animElemsTop.forEach(element => {
-        if (isScrolledIntoView(element, $(window)) && screen.width > 575) {
-            element.css({ "opacity": 1, "left": 0, "top": 0 });
-        }
+$(function() {
+    $("#contactEmail").on("click", function () {
+        window.open("/contact");
     });
 
+    $("#contactLinkedin").on("click", function () {
+        window.open("https://www.linkedin.com/in/jade-westover-179503135/");
+    });
+});
+
+$(document).on("scroll", () => {
     animElemsBottom.forEach(element => {
         if (isScrolledIntoView(element[0], $(window)) && screen.width > 575) {
-            element[0].css({ "opacity": 1, "left": 0, "top": 0 });
-            element[1].css({ "opacity": 1, "left": 0, "top": 0 });
+            element.forEach(elem => elem.css({ "opacity": 1, "left": 0, "top": 0 }))
         }
     });
 });

@@ -38,7 +38,6 @@
     display: flex;
     align-items: center;
     height: 400px;
-    /* background-color: #D3D3D3; */
     background-color: #666666;
 }
 
@@ -46,14 +45,19 @@
     display: flex;
     align-items: center;
     height: 400px;
-    /* background-color: #4F6272; */
     background-color: #DEDEDE;
 }
 
 .colorBlock4 {
-    height: 1750px;
-    /* background-color: #D3D3D3; */
+    height: 1650px;
     background-color: #666666;
+}
+
+.colorBlock5 {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    background-color: #DEDEDE;
 }
 
 .subButton {
@@ -145,15 +149,22 @@
     text-align: left;
 }
 
+.cb5LargeText {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: #666666;
+    text-align: center;
+}
+
+.cb5SmallText {
+    font-family: 'Montserrat', sans-serif;
+    color: #666666;
+    text-align: center;
+}
+
 .container hr {
     background-color: #DEDEDE;
 }
-
-/* .cb4SmallText {
-    font-family: 'dosis', sans-serif;
-    color: #DEDEDE;
-    text-align: left;
-} */
 
 .pushBottomMargin {
     margin-bottom: 60px;
@@ -162,10 +173,6 @@
 pushBottomMarginLight {
     margin-bottom: 20px;
 }
-
-/* #cb2Left, #cb2Right {
-    border-bottom: solid 2px gray;
-} */
 
 .bottomBorder {
     border-bottom: solid 2px gray;
@@ -193,6 +200,16 @@ pushBottomMarginLight {
 .techIcons {
     font-size: 4em;
     color: #DEDEDE;
+}
+
+.contactIcons {
+    font-size: 4em;
+    color: #666666;
+}
+
+.contactIcons:hover {
+    color :#545454;
+    cursor: pointer;
 }
 
 .centerItems {
@@ -263,7 +280,7 @@ pushBottomMarginLight {
     }
 
     .colorBlock4 {
-        height: 2900px;
+        height: 3000px;
     }
 
 }
@@ -319,9 +336,15 @@ pushBottomMarginLight {
     }
 }
 
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .colorBlock4 {
+        height: 1800px;
+    }
+}
+
 @media only screen and (max-width: 992px) and (min-width: 767px) {
     .colorBlock4 {
-        height: 2300px;
+        height: 2400px;
     }
 }
 
