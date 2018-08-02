@@ -115,6 +115,10 @@
     text-align: left;
 }
 
+.card-deck .card {
+    border: solid 1px gray;
+}
+
 .cb2LargeText {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
@@ -220,6 +224,10 @@ pushBottomMarginLight {
 
 .textRightAlign {
     text-align: right;
+}
+
+.textCenterAlign {
+    text-align: center;
 }
 
 @media only screen and (max-width: 575px) {
