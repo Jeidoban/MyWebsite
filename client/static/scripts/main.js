@@ -68,12 +68,12 @@ function isScrolledIntoView(elem, win) {
     return elemBottom <= docViewBottom;
 }
 
-$(function() {
-    $("#contactEmail").on("click", function () {
+$(() => {
+    $("#contactEmail").on("click", () => {
         window.open("/contact");
     });
 
-    $("#contactLinkedin").on("click", function () {
+    $("#contactLinkedin").on("click", () => {
         window.open("https://www.linkedin.com/in/jade-westover-179503135/");
     });
 });

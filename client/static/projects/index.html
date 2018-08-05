@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/projects.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/contact.css" />
+
 
     <title>Portfolio</title>
 </head>
@@ -22,48 +24,81 @@
         <a class="nav-link" href="/projects">
             <i class="fas fa-briefcase"></i> Projects</a>
         <a class="nav-link" href="/contact">
-            <i class="far fa-envelope"></i> Contact</a>
+            <i class="fas fa-envelope"></i> Contact</a>
     </nav>
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <br>
                 <br>
-                <h1 class="text-center">Take a look at some of the projects I've done</h1>
-                <h5 class="text-center">These are some small projects I've done either to learn a new framework or language, or get more practice using it. </h5>
+                <h1 class="text-center titleText">My Projects</h1>
+                <!-- <h5 class="text-center">These are some small projects I've done either to learn a new framework or language, or get more practice
+                    using it. </h5> -->
                 <hr>
+                <br>
             </div>
             <div class="card-deck">
                 <div class="card text-center">
                     <img class="card-img-top" src="../images/BankLedgerScreen.png">
                     <div class="card-body">
-                        <h5 class="card-title">BankLedger</h5>
-                        <p class="card-text">A simple bank ledger app created to learn more about React and Express.</p>
+                        <h5 class="card-title titleText">BankLedger</h5>
+                        <p class="card-text smallText">A simple bank ledger app created to learn more about React and Express.</p>
                         <div>
                             <a href="bank-ledger">
-                                <button class="btn btn-primary">Start App</button>
+                                <button class="btn btn-secondary smallText">Start App</button>
                             </a>
                         </div>
                         <br>
-                        <a href="https://github.com/Joafie/BankLedger">GitHub Repo</a>
+                        <a href="https://github.com/Joafie/BankLedger" class="smallText">GitHub Repo</a>
                     </div>
                 </div>
                 <div class="card text-center">
                     <img class="card-img-top" src="../images/BlogAppScreen.png">
                     <div class="card-body">
-                        <h5 class="card-title">BlogApp</h5>
-                        <p class="card-text">A simple blog app created in React, Django and Django REST Framework for practice.</p>
+                        <h5 class="card-title titleText">BlogApp</h5>
+                        <p class="card-text smallText">A simple blog app created in React, Django and Django REST Framework for practice.</p>
                         <div>
-                            <button class="btn btn-primary">Start App</button>
+                            <button class="btn btn-secondary smallText">Start App</button>
                         </div>
                         <br>
-                        <a href="https://github.com/Joafie/BlogApp">GitHub Repo</a>
+                        <a href="https://github.com/Joafie/BlogApp" class="smallText">GitHub Repo</a>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="../images/PaddleScreen.png">
+                    <div class="card-body">
+                        <h5 class="card-title titleText">Paddle</h5>
+                        <p class="card-text smallText">A Pong like game, made to try out the Godot Game Engine.</p>
+                        <div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle smallText" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Download
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item smallText" href="/files/paddle.dmg"><i class="fab fa-apple"></i> MacOS</a>
+                                    <a class="dropdown-item smallText" href="#"><i class="fab fa-windows"></i> Windows</a>
+                                    <a class="dropdown-item smallText" href="#"><i class="fab fa-linux"></i> Linux</a>
+                                    <a class="dropdown-item smallText" href="#"><i class="fab fa-android"></i> Android</a>
+                                </div>
+                            </div>
+                            <!-- <button id="downloadPaddleButton" class="btn btn-primary">Download</button> -->
+                        </div>
+                        <br>
+                        <a href="https://github.com/Joafie/Paddle" class="smallText">GitHub Repo</a>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/main.js"></script>
 </body>
 
 </html>
