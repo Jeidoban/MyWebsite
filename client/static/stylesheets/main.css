@@ -37,14 +37,14 @@
 .colorBlock2 {
     display: flex;
     align-items: center;
-    height: 400px;
+    height: 275px;
     background-color: #666666;
 }
 
 .colorBlock3 {
     display: flex;
     align-items: center;
-    height: 400px;
+    height: 275px;
     background-color: #DEDEDE;
 }
 
@@ -117,7 +117,7 @@
 
 .cb2LargeText {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
+    font-weight: 400;
     color: #DEDEDE;
     text-align: left;
 }
@@ -130,7 +130,7 @@
 
 .cb3LargeText {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
+    font-weight: 400;
     color: #666666;
     text-align: left;
 }
@@ -236,11 +236,11 @@ pushBottomMarginLight {
     }
 
     .colorBlock2 {
-        height: 700px;
+        height: 390px;
     }
 
     .colorBlock3 {
-        height: 650px;
+        height: 450px;
     }
 
     .cb1LargeText, .techIcons {
@@ -314,16 +314,17 @@ pushBottomMarginLight {
     }
 
     .navibar a {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .colorBlock2 {
-        height: 750px;
+        height: 410px;
     }
 
     .techIcons {
         font-size: 3em;
     }
+    
 }
 
 @media only screen and (max-width: 992px) and (min-width: 576px) {
@@ -333,6 +334,10 @@ pushBottomMarginLight {
 
     .colorBlock1 {
         height: 400px;
+    }
+
+    .colorBlock2 {
+        height: 350px;
     }
 
     .colorBlock4 {
