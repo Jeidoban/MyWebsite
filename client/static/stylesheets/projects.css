@@ -3,6 +3,25 @@
     font-weight: 400;
 }
 
-.smallText{
+.smallText {
     font-family: 'Nunito', sans-serif;
+}
+
+.card-deck .card {
+    border: solid 1px gray;
+}
+
+#spotifySmall {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+   #spotifyLarge {
+       display: none;
+   }
+
+   #spotifySmall {
+       display: initial;
+   }
 }

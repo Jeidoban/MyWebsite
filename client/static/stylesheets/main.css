@@ -19,7 +19,7 @@
 }
 
 .spotify {
-    border: black solid 2px;
+    border: black solid 1px;
     border-radius: 3px;
 }
 
@@ -113,10 +113,6 @@
     font-family: 'dosis', sans-serif;
     color: #DEDEDE;
     text-align: left;
-}
-
-.card-deck .card {
-    border: solid 1px gray;
 }
 
 .cb2LargeText {
