@@ -22,12 +22,6 @@ function handleContactSubmit(event) {
         }).catch(err => alert(err));
 }
 
-$(document).ready(() => {
-    if (screen.width > 575) {
-        $("#cb1Anim").css({ "opacity": 1, "left": 0 });
-    }
-});
-
 let animElemsBottom = [
     [$("#cb2Anim")],
     [$("#cb3Anim")],
@@ -69,6 +63,15 @@ function isScrolledIntoView(elem, win) {
 }
 
 $(() => {
+    if (screen.width > 575) {
+        $("#cb1Anim").css({ "opacity": 1, "left": 0 });
+    }
+
+    if (isScrolledIntoView(animElemsBottom[0][0], $(window)) && screen.width > 575) {
+       animElemsBottom[0][0].css({ "opacity": 1, "left": 0 });
+       animElemsBottom[1][0].css({ "opacity": 1, "left": 0 });
+    }
+
     $("#contactEmail").on("click", () => {
         window.open("/contact");
     });

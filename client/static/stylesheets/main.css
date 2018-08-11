@@ -284,7 +284,7 @@ pushBottomMarginLight {
     }
 
     .colorBlock4 {
-        height: 3000px;
+        height: 2950px;
     }
 
 }
@@ -314,7 +314,7 @@ pushBottomMarginLight {
     }
 
     .navibar a {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .colorBlock2 {
@@ -324,7 +324,21 @@ pushBottomMarginLight {
     .techIcons {
         font-size: 3em;
     }
+
+    .colorBlock4 {
+        height: 3100px;
+    }
     
+}
+
+@media only screen and (max-width: 320px) {
+    .navibar a {
+        font-size: 0.9em;
+    }
+
+    .colorBlock4 {
+        height: 3450px;
+    }
 }
 
 @media only screen and (max-width: 992px) and (min-width: 576px) {
