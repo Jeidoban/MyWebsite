@@ -17,7 +17,7 @@ function handleContactSubmit(event) {
             if (payload.error) {
                 alert("There was an error");
             } else {
-                window.location.replace('../emailSuccess');
+                window.location.replace('../email-success');
             }
         }).catch(err => alert(err));
 }
