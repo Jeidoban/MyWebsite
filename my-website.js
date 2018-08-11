@@ -5,7 +5,10 @@ const path = require('path');
 
 app.use(express.json());
 app.use('/api', api);
-app.use(express.static(path.join(__dirname, '/client/static')/*, {extensions: ['html']}*/));
-//app.use('/projects/bank-ledger', express.static(path.join(__dirname, '/client/apps/bank-ledger/build')));
+app.use(express.static(path.join(__dirname, '/client/static')));
+
+app.get("/*", (req, res) => {
+    res.status(404).redirect('/404/');
+});
 
 app.listen(3000, () => console.log('Listening on port 3000...'));
